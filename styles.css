@@ -109,3 +109,7 @@
   width: 18px;
   margin-right: 18px;
 }
+
+.flex {
+  display: flex;
+}
