@@ -13,7 +13,7 @@
 
 ## Live Preview 
 
-[Live Demo Link]()
+[Live Demo Link](https://deploy-preview-1--bimbola-mv-portfolio.netlify.app/)
 
 
 ## Author
