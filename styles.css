@@ -31,3 +31,81 @@
 .logo {
   color: #fff;
 }
+
+.main-section {
+  background-color: #1c1a19;
+  position: relative;
+  height: 100vh;
+  padding: 120px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.img {
+  background-image: url("./images/illustration-header-mobile.png");
+  background-position: right bottom -20%;
+  background-repeat: no-repeat;
+}
+
+.greetings {
+  display: block;
+  font-family: "Crete Round", serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  text-align: left;
+  color: #ff6b00;
+  margin-bottom: 5px;
+}
+
+.bottom {
+  bottom: -44px;
+}
+
+.title {
+  color: #fff5e1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.icon {
+  color: #dbd8d7;
+  font-size: 20px;
+  padding: 9px;
+}
+
+.icon:hover {
+  font-size: 35px;
+  transition: 0.6s ease-out;
+  color: #fff;
+}
+
+.icons {
+  color: #ff6b00;
+  width: 18px;
+  margin-right: 18px;
+}
