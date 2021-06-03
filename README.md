@@ -3,7 +3,7 @@
 > This project is a Microverse exercise on HTML and CSS that demonstrates the knowledge of Semantic HTML, flexbox, background properties, and mobile-first responsiveness
 
 ![screenshot](screenshot.png)
-
+![screenshot](screenshot1.png)
 
 ## Built With
 
