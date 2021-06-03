@@ -225,9 +225,14 @@
 }
 
 .img-works {
+  background-image: url(./images/main-project-setup.jpg);
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 30px solid #aaa;
   border-radius: 3px;
+  height: 300px;
 }
 
 .work-h3 {
