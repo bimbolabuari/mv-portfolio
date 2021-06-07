@@ -264,7 +264,18 @@
 }
 
 .float {
+  border: none;
+  padding: 10px 12px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
   float: left;
+  margin:15px;
 }
 
 .project-flex {
