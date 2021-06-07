@@ -275,7 +275,7 @@
   color: #fff;
   cursor: pointer;
   float: left;
-  margin:15px;
+  margin: 15px;
 }
 
 .project-flex {
@@ -315,6 +315,7 @@
 }
 
 .work-link {
+  clear: both;
   color: #fff;
   border: none;
   font-size: 15px;
