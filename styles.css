@@ -278,6 +278,10 @@
   margin:15px;
 }
 
+.nothing{
+  position: relative;
+}
+
 .project-flex {
   flex-direction: column;
 }
