@@ -405,3 +405,124 @@
   color: #5b5957;
   background: #f4f1f0;
 }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 120px 24px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.contact-header {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  font-style: normal;
+  color: #172b4d;
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+  padding: 15px;
+  outline: none;
+  margin: 15px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.textarea {
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  background: #fbf8f7;
+  padding: 15px;
+  height: 100px;
+  margin-top: 24px;
+  outline: none;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.input:hover,
+.textarea:hover {
+  border: 1px solid #dbd8d7;
+}
+
+.contact-button {
+  line-height: 24px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  background: #ff6b00;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 20px 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.contact-button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.contact-button:active {
+  background: #e05304;
+}
+
+.contact-button:disabled {
+  color: #5b5957;
+  background: hsl(15, 15%, 95%);
+}
+
+.footer {
+  margin-top: 4em;
+  display: flex;
+  height: 12vh;
+  border-top: 1px solid #dfe1e6;
+  justify-content: center;
+}
+
+.footer-icon {
+  color: #505f79;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.footer-icon:hover {
+  color: #172b4d;
+  font-size: 35px;
+  padding: 10px;
+  transition: 0.6s ease-in;
+  cursor: pointer;
+}
+
+.flex-footer {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
