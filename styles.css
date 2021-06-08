@@ -405,3 +405,27 @@
   color: #5b5957;
   background: #f4f1f0;
 }
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
+}
+.contact > form{
+  display: flex;
+  flex-direction: column;
+}
+.contact-header{
+  font-family: Inter,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 44px;
+text-align: center;
+color:#172b4d;
+}
+
+.contact > input{
+  border:none;
+  border-bottom: #DBD8D7;
+}
