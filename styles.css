@@ -329,7 +329,12 @@
 }
 
 .project-container {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("././images/project-setup3.jpg");
+  background: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url("././images/project-setup3.jpg");
   background-color: #ccc;
   height: 420px;
   background-position: center;
@@ -406,26 +411,64 @@
   background: #f4f1f0;
 }
 
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   padding: 120px 24px;
 }
-.contact > form{
+.contact > form {
   display: flex;
   flex-direction: column;
 }
-.contact-header{
-  font-family: Inter,sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 44px;
-text-align: center;
-color:#172b4d;
+.contact-header {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
 }
 
-.contact > input{
-  border:none;
-  border-bottom: #DBD8D7;
+.input {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+  padding: 15px;
+}
+
+.textarea {
+  font-family: Inter, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  background: #fbf8f7;
+  padding: 5px;
+  height: 100px;
+}
+
+.contact-button {
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-self: center;
+  text-align: center;
+  background: #ff6b00;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  padding: 7px;
+  margin-top: 15px;
+  width: 40%;
 }
