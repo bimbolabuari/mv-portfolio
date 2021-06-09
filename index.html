@@ -14,14 +14,20 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav class="header flex">
+    <header class="header header-flex">
+      <nav class="nav flex">
         <a href="#" class="logo">Abimbola</a>
-        <a><i class="fa fa-bars cursor"></i></a>
+        <a class="none"><i class="fa fa-bars cursor"></i></a>
       </nav>
+      <ul class="nav-list block">
+        <li class="ul-list"><a>Portfolio</a></li>
+        <li class="ul-list"><a>About</a></li>
+        <li class="ul-list"><a>Contact</a></li>
+        <li class="ul-list"><a><i class="fa fa-envelope white icon"></i></a></li>
+      </ul>
     </header>
     <section class="main-section img flex">
-        <div>
+        <div class="greetings-container">
           <h1 class="greetings">Hey There.</h1>
           <h2 class="greetings">I'm Abimbola</h2>
           <h3 class="title flex">I'am a Software Developer</h3>
@@ -31,7 +37,7 @@
             you need coded, dont hestiate to contact me.
           </p>
         </div>
-        <ul class="flex">
+        <ul class="flex icon-ul">
             <li>
                 <a href="https://github.com/bimbolabuari/"
                 target="_blank"
@@ -72,6 +78,7 @@
       <h2 class="work-header">My recent Works</h2>
       <div class="works flex">
         <div class="img-works"></div>
+        <div class="work-container">
         <div class="caption">
           <h3 class="work-h3">Multi-Post Stories</h3>
           <p class="work-paragraph">
@@ -87,6 +94,7 @@
           <button type="button" class="cursor work-button">Ruby</button>
         </div>
         <a href="/" class="cursor work-link">See Project</a>
+        </div>
       </div>
       <ul class="project-flex flex">
         <li class="project-container">
@@ -199,7 +207,7 @@
         <a class="btn" href="">Get My Resume</a>
         <p class="underline"></p>
       </div>
-      <ul>
+      <ul class="list-flex">
         <li>
           <ul class="list-container">
              <li class="list first"><i class="fa fa-star icons"></i>Language</li>
