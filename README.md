@@ -1,9 +1,8 @@
 # PORTFOLIO-PROJECT
 
-> This project is a Microverse exercise on HTML and CSS that demonstrates the knowledge of Semantic HTML, flexbox, background properties, and mobile-first responsiveness
+> This project is a Microverse exercise on HTML and CSS that demonstrates the knowledge of Semantic HTML, flexbox, background properties, and mobile-first responsiveness, Responsive web design, CSS media query.
 
-![screenshot](screenshot.png)
-![screenshot](screenshot1.png)
+
 
 ## Built With
 
@@ -13,7 +12,7 @@
 
 ## Live Preview 
 
-[Live Demo Link](https://deploy-preview-1--bimbola-mv-portfolio.netlify.app/)
+[Live Demo Link](https://deploy-preview-4--bimbola-mv-portfolio.netlify.app/)
 
 
 ## Author
