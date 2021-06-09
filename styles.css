@@ -639,6 +639,10 @@
     left: 30px;
   }
 
+  .list {
+    text-align: start;
+  }
+
   .contact {
     flex-direction: row;
     justify-content: space-between;
@@ -649,10 +653,10 @@
     font-size: 30px;
     line-height: 45px;
     width: 45%;
-    align-self: center;
   }
 
   .form {
+    margin-top: 0;
     width: 50%;
   }
 
@@ -669,7 +673,12 @@
     background-image: url("./images/Illustration-header@2x.png");
     background-position: right top 0%;
     background-repeat: no-repeat;
-    background-size: 400px;
+    background-size: 500px;
+  }
+
+  .intro {
+    font-size: 19px;
+    line-height: 35px;
   }
 
   .img2 {
@@ -682,9 +691,9 @@
 
   .about-section {
     background-image: url("./images/illustration-about\ me@2x.png");
-    background-position: right top 10%;
+    background-position: right top 15%;
     background-repeat: no-repeat;
-    background-size: 47%;
+    background-size: 40%;
     padding: 120px 80px;
   }
 
