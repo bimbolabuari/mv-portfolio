@@ -15,9 +15,7 @@
   padding: 0 30px;
   height: 10vh;
   width: 100%;
-  justify-content: space-between;
   color: #fff;
-  align-items: center;
   position: fixed;
   z-index: 1;
   font-family: "Roboto", sans-serif;
@@ -25,6 +23,12 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+}
+
+.nav {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -48,7 +52,7 @@
 
 .img {
   background-image: url("./images/illustration-header-mobile.png");
-  background-position: right bottom -20%;
+  background-position: right bottom -49%;
   background-repeat: no-repeat;
 }
 
@@ -134,6 +138,7 @@
   line-height: 24px;
   margin-bottom: 20px;
   color: #f4f5f7;
+  max-width: 500px;
 }
 
 .btn {
@@ -165,7 +170,7 @@
 }
 
 .about-container {
-  height: 100vh;
+  height: 80vh;
   position: relative;
 }
 
@@ -216,6 +221,7 @@
   font-weight: 400;
   line-height: 52px;
   margin-bottom: 30px;
+  color: #091e42;
 }
 
 .works {
@@ -311,6 +317,7 @@
   width: 120px;
   height: 48px;
   background: #ff6b00;
+  display: inline-block;
 }
 
 .work-link:hover {
@@ -525,4 +532,169 @@
   flex-direction: row;
   justify-content: center;
   align-self: center;
+}
+
+.block {
+  display: none;
+}
+
+@media only screen and (min-width: 420px) {
+  .greetings {
+    font-size: 56px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+
+  .contact-header {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .none {
+    display: none;
+  }
+
+  .project-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .paragraph {
+    max-width: 500px;
+  }
+
+  .work-container {
+    width: 71%;
+    padding-left: 20px;
+  }
+
+  .project-container {
+    width: 49%;
+  }
+
+  .works {
+    flex-direction: row;
+    width: 100%;
+    align-content: space-between;
+  }
+
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .img {
+    background-position: right bottom -30%;
+    background-size: 180px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+
+  .contact {
+    padding: 120px 80px 0;
+  }
+
+  .ul-list:hover {
+    font-size: 20px;
+    transition: 0.8s ease-out;
+    color: #fff;
+  }
+
+  .img-works {
+    height: auto;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .nav-list {
+    width: 40%;
+  }
+
+  .icon-ul {
+    position: absolute;
+    flex-direction: column;
+    left: 30px;
+  }
+
+  .contact {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-header {
+    text-align: left;
+    font-size: 30px;
+    line-height: 45px;
+    width: 45%;
+    align-self: center;
+  }
+
+  .form {
+    width: 50%;
+  }
+
+  .contact-button {
+    align-self: start;
+    font-size: 18px;
+  }
+
+  .greetings-container {
+    margin-left: 6%;
+  }
+
+  .img {
+    background-image: url("./images/Illustration-header@2x.png");
+    background-position: right top 0%;
+    background-repeat: no-repeat;
+    background-size: 400px;
+  }
+
+  .img2 {
+    background-image: none;
+  }
+
+  .work {
+    padding: 120px 80px;
+  }
+
+  .about-section {
+    background-image: url("./images/illustration-about\ me@2x.png");
+    background-position: right top 10%;
+    background-repeat: no-repeat;
+    background-size: 47%;
+    padding: 120px 80px;
+  }
+
+  .list-flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7em;
+  }
+
+  .project-container {
+    width: 32.5%;
+  }
 }
