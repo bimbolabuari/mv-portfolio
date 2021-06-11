@@ -93,16 +93,26 @@
   text-align: left;
 }
 
-.icon {
+.icon,
+.header-icon {
   color: #dbd8d7;
   font-size: 20px;
   padding: 9px;
+}
+
+.header-icon {
+  color: #fff;
 }
 
 .icon:hover {
   font-size: 35px;
   transition: 0.6s ease-out;
   color: #fff;
+}
+
+.header-icon:hover {
+  font-size: 25px;
+  transition: 0.5s ease-out;
 }
 
 .icons {
@@ -220,8 +230,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 52px;
-  margin-bottom: 30px;
   color: #091e42;
+  border-bottom: 1px solid #e5e5e5;
+  height: 12vh;
+  width: fit-content;
+  margin: 0 auto 3em;
 }
 
 .works {
@@ -238,7 +251,7 @@
   background-size: cover;
   border: 30px solid #aaa;
   border-radius: 3px;
-  height: 300px;
+  height: 350px;
 }
 
 .work-h3 {
@@ -267,6 +280,7 @@
 .btn-flex {
   justify-content: space-between;
   margin: 10px 0;
+  max-width: 350px;
 }
 
 .project-flex {
@@ -538,7 +552,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 600px) {
   .greetings {
     font-size: 56px;
   }
@@ -559,9 +573,32 @@
     font-size: 32px;
     line-height: 44px;
   }
+
+  .img-works {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .work-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .btn-flex {
+    width: 65%;
+  }
+
+  .project-flex {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact {
+    padding: 120px 80px 0;
+  }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 768px) {
   .none {
     display: none;
   }
@@ -570,6 +607,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .header {
+    padding: 0 50px;
   }
 
   .paragraph {
@@ -596,24 +637,47 @@
     justify-content: space-between;
   }
 
+  .work-header {
+    font-size: 33px;
+    line-height: 45px;
+    color: #091e42;
+    margin: 0 auto 2em;
+  }
+
+  .btn-flex {
+    width: 100%;
+  }
+
+  .img {
+    background-image: url("./images/Illustration-header@2x.png");
+    background-position: right bottom 0%;
+    background-repeat: no-repeat;
+    background-size: 300px;
+  }
+
   .nav-list {
     display: flex;
-    width: 60%;
+    width: 50%;
     align-items: center;
     justify-content: space-between;
   }
 
-  .img {
-    background-position: right bottom -30%;
-    background-size: 180px;
+  .icon,
+  .header-icon {
+    font-size: 20px;
+    color: #cfcfcf;
   }
 
-  .icon {
-    font-size: 25px;
+  .logo {
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
   }
 
-  .contact {
-    padding: 120px 80px 0;
+  .ul-list {
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
   }
 
   .ul-list:hover {
@@ -624,28 +688,38 @@
 
   .img-works {
     height: auto;
-    width: 60%;
-  }
-}
-
-@media only screen and (min-width: 970px) {
-  .nav-list {
-    width: 40%;
+    width: 90%;
   }
 
-  .icon-ul {
-    position: absolute;
-    flex-direction: column;
-    left: 30px;
+  .work-paragraph {
+    font-size: 16px;
+    line-height: 26px;
   }
 
-  .list {
-    text-align: start;
+  .work-link {
+    background: #f55800;
+  }
+
+  .list-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    flex-wrap: wrap;
+  }
+
+  .list-flex-container {
+    width: 46%;
+  }
+
+  .last {
+    margin: 0 auto;
   }
 
   .contact {
     flex-direction: row;
     justify-content: space-between;
+    padding: 120px 30px 0;
   }
 
   .contact-header {
@@ -664,15 +738,50 @@
     align-self: start;
     font-size: 18px;
   }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-list {
+    width: 40%;
+  }
+
+  .icon-ul {
+    position: absolute;
+    flex-direction: column;
+    left: 30px;
+  }
+
+  .list {
+    text-align: start;
+  }
 
   .greetings-container {
     margin-left: 6%;
+    width: 50%;
+  }
+
+  .greetings {
+    font-size: 50px;
+    line-height: 60px;
+    color: #f55800;
+  }
+
+  .title {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    line-height: 34px;
+    color: #fff;
+  }
+
+  .paragraph {
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    line-height: 32px;
+    color: #f4f5f7;
   }
 
   .img {
-    background-image: url("./images/Illustration-header@2x.png");
-    background-position: right top 0%;
-    background-repeat: no-repeat;
+    background-position: right top 5%;
     background-size: 500px;
   }
 
@@ -697,13 +806,11 @@
     padding: 120px 80px;
   }
 
-  .list-flex {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 7em;
-  }
-
   .project-container {
     width: 32.5%;
+  }
+
+  .list-flex-container {
+    width: auto;
   }
 }
