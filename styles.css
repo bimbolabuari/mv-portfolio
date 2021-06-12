@@ -33,6 +33,12 @@
 
 .logo {
   color: #fff;
+  transition: 0.8s transform;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+  cursor: none;
 }
 
 .main-section {
@@ -254,6 +260,11 @@
   height: 350px;
 }
 
+.img-works:hover {
+  transition: 0.6s ease-in-out;
+  transform: scale(1.04);
+}
+
 .work-h3 {
   text-align: left;
   padding: 10px 0;
@@ -358,6 +369,11 @@
   background-size: cover;
   position: relative;
   margin: 10px auto;
+}
+
+.project-container:hover {
+  transition: 0.6s ease-in-out;
+  transform: scale(1.04);
 }
 
 .project-header {
@@ -484,6 +500,8 @@
 .input:hover,
 .textarea:hover {
   border: 1px solid #dbd8d7;
+  transition: 0.4s ease-in-out;
+  transform: translate(10px);
 }
 
 .contact-button {
