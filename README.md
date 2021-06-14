@@ -12,7 +12,7 @@
 
 ## Live Preview 
 
-[Live Demo Link](https://deploy-preview-4--bimbola-mv-portfolio.netlify.app/)
+[Github deploy Page](https://bimbolabuari.github.io/mv-portfolio/)
 
 
 ## Author
