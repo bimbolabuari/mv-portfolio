@@ -38,6 +38,10 @@
   cursor: none;
 }
 
+.white {
+  color: #fff;
+}
+
 .main-section {
   background-color: #1c1a19;
   position: relative;
@@ -168,7 +172,7 @@
 }
 
 .btn:hover {
-  background: #fff5e1;
+  background: #fff;
   border: 1px solid #f55800;
   color: #f55800;
 }
@@ -313,8 +317,8 @@
 }
 
 .work-button:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
+  background: #fff;
+    border: 1px solid #f55800;
   color: #f55800;
 }
 
@@ -343,8 +347,8 @@
 }
 
 .work-link:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
+  background: #fff;
+    border: 1px solid #f55800;
   color: #f55800;
 }
 
@@ -426,8 +430,8 @@
 }
 
 .project-link:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
+  background: #fff;
+    border: 1px solid #f55800;
   color: #f55800;
 }
 
@@ -476,6 +480,7 @@
   margin: 15px 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  width: 100%;
 }
 
 .textarea {
@@ -519,8 +524,8 @@
 }
 
 .contact-button:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
+  background: #fff;
+    border: 1px solid #f55800;
   color: #f55800;
 }
 
