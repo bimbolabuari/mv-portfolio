@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio-Software developer Portfolio</title>
+    <title>Portfolio-Abimbola's full stack developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500;700&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link
@@ -11,19 +11,28 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
       type="text/css"
     />
-    <!-- <link href="styles.css" rel="stylesheet" /> -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199544730-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-199544730-1');
+  </script>
   </head>
   <body>
     <header class="header header-flex">
       <nav class="nav flex">
         <a href="#" class="logo">Abimbola</a>
-        <a href="#" class="none"><i class="fa fa-bars cursor"></i></a>
+        <a href="/" class="none white"><i class="fa fa-bars cursor"></i></a>
       </nav>
       <ul class="nav-list block">
-        <li class="ul-list cursor"><a href="#">Portfolio</a></li>
-        <li class="ul-list cursor"><a href="#">About</a></li>
-        <li class="ul-list cursor"><a href="#">Contact</a></li>
-        <li class="ul-list cursor"><a href="#"><i class="fa fa-envelope white header-icon"></i></a></li>
+        <li><a href="#" class="ul-list cursor">Portfolio</a></li>
+        <li><a href="#" class="ul-list cursor">About</a></li>
+        <li><a href="#" class="ul-list cursor">Contact</a></li>
+        <li><a href="#" class="ul-list cursor"><i class="fa fa-envelope white header-icon"></i></a></li>
       </ul>
     </header>
     <section class="main-section img flex">
@@ -240,8 +249,12 @@
     <section class="contact">
       <h2 class="contact-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form class="form" action="https://formspree.io/f/mnqlvaon" method="post">
-        <input type="text" name="name" class="input" placeholder="Full name" maxlength="30" required>
-        <input type="email" name="_replyto" class="input" placeholder="Email address" required>
+        <label for="name">
+        <input type="text" name="name" class="input" id="name" placeholder="Full name" maxlength="30" required>
+        </label>
+        <label for="email">
+        <input type="email" name="_replyto" class="input" id="email" placeholder="Email address" required>
+        </label>
         <textarea class="textarea" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
         <button type="submit" class="contact-button">Get in touch</button>
       </form>
