@@ -1,16 +1,21 @@
-// DOM element
-const hamburger = document.querySelector('#hamburger');
+const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav-list');
-const closeX = document.querySelector('#close');
-
-function openMenu() {
-  navList.classList.add('opacity');
-  hamburger.classList.add('visibility');
+const navLinks = document.querySelectorAll('.nav-list a');
+function toggleBurger() {
+  navList.classList.toggle('nav-active');
+  navLinks.forEach((link, index) => {
+    if (link.style.animation) {
+      link.style.animation = '';
+    } else {
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 2 + 0.4}s`;
+    }
+  });
+  hamburger.classList.toggle('toggle');
 }
+hamburger.addEventListener('click', toggleBurger);
 
-hamburger.addEventListener('click', openMenu);
-
-closeX.addEventListener('click', () => {
-  navList.classList.remove('opacity');
-  hamburger.classList.remove('visibility');
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    navList.classList.remove('nav-active');
+  });
 });

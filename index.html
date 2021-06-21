@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Portfolio-Abimbola's full stack developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500;700&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400;500;700&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
@@ -13,202 +16,236 @@
     />
     <link href="styles.css" rel="stylesheet" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-199544730-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-199544730-1"
+    ></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-     gtag('config', 'UA-199544730-1');
-  </script>
+      gtag("config", "UA-199544730-1");
+    </script>
   </head>
   <body class="body">
     <header class="header header-flex">
       <nav class="nav flex">
         <a href="#" class="logo">Abimbola</a>
-        <a href="#" id="hamburger" class="none white"><i class="fa fa-bars cursor"></i></a>
+        <div class="hamburger block cursor">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
-      <ul class="nav-list block">
-        <li><a><i id="close" class="fa fa-times white none"></i></a></li>
-        <li><a href="#portfolio" class="ul-list cursor">Portfolio</a></li>
-        <li><a href="#about" class="ul-list cursor">About</a></li>
-        <li><a href="#contact" class="ul-list cursor">Contact</a></li>
-        <li><a href="mailto:abimbola.buari@gmail.com" class="ul-list cursor"><i class="fa fa-envelope white header-icon"></i></a></li>
+      <ul class="nav-list">
+        <li>
+          <a href="#portfolio" class="ul-list cursor bottom-border"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="#about" class="ul-list cursor bottom-border">About</a></li>
+        <li>
+          <a href="#contact" class="ul-list cursor bottom-border">Contact</a>
+        </li>
+        <li>
+          <a
+            href="mailto:abimbola.buari@gmail.com"
+            class="ul-list cursor d-none"
+            id="envelope"
+            ><i class="fa fa-envelope white header-icon"></i
+          ></a>
+        </li>
       </ul>
     </header>
-    <section  class="main-section img flex">
-        <div class="greetings-container">
-          <h1 class="greetings">Hey There.</h1>
-          <h2 class="greetings">I'm Abimbola</h2>
-          <h3 class="title flex">I'am a Software Developer</h3>
-          <p class="paragraph">
-            I can help you build a product, feature or website. Look through some
-            of my work and experience! If you like what you see and have a project
-            you need coded, dont hestiate to contact me.
-          </p>
-        </div>
-        <ul class="flex icon-ul">
-            <li>
-                <a href="https://github.com/bimbolabuari/"
-                target="_blank"
-                rel="noopener"><i class="fa fa-github icon"></i>
-                </a>
-            </li>
-            <li>
-                <a
-                href="https://www.linkedin.com/in/bimbolabuari/"
-                target="_blank"
-                rel="noopener"
-                ><i class="fa fa-linkedin icon"></i></a>
-            </li>
-            <li>
-                <a
-                href="https://www.instagram.com/bimbolabuari/"
-                target="_blank"
-                rel="noopener"
-                ><i class="fa fa-instagram icon"></i
-              ></a>
-            </li>
-            <li>
-                <a
-                href="https://twitter.com/bimbolabuari/"
-                target="_blank"
-                rel="noopener"
-                ><i class="fa fa-twitter icon"></i
-              ></a>
-            </li>
-             <li>
-                <a href="mailto:abimbola.buari@gmail.com" target="_blank" rel="noopener"
-                ><i class="fa fa-envelope icon"></i
-              ></a>
-             </li>
-        </ul>
+    <section class="main-section img flex">
+      <div class="greetings-container">
+        <h1 class="greetings">Hey There.</h1>
+        <h2 class="greetings">I'm Abimbola</h2>
+        <h3 class="title flex">I'am a Software Developer</h3>
+        <p class="paragraph">
+          I can help you build a product, feature or website. Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, dont hestiate to contact me.
+        </p>
+      </div>
+      <ul class="flex icon-ul">
+        <li>
+          <a
+            href="https://github.com/bimbolabuari/"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa fa-github icon"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/bimbolabuari/"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa fa-linkedin icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/bimbolabuari/"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa fa-instagram icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/bimbolabuari/"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa fa-twitter icon"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="mailto:abimbola.buari@gmail.com"
+            target="_blank"
+            rel="noopener"
+            ><i class="fa fa-envelope icon"></i
+          ></a>
+        </li>
+      </ul>
     </section>
     <section id="portfolio" class="work">
       <h2 class="work-header">My recent Works</h2>
       <div class="works flex">
         <div class="img-works"></div>
         <div class="work-container">
-        <div class="caption">
-          <h3 class="work-h3">Multi-Post Stories</h3>
-          <p class="work-paragraph">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-        </div>
-        <div class="flex btn-flex">
-          <button type="button" class="cursor work-button">css</button>
-          <button type="button" class="cursor work-button">html</button>
-          <button type="button" class="cursor work-button">bootstrap</button>
-          <button type="button" class="cursor work-button">Ruby</button>
-        </div>
-        <a href="#" class="cursor work-link">See Project</a>
+          <div class="caption">
+            <h3 class="work-h3">Multi-Post Stories</h3>
+            <p class="work-paragraph">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+          <div class="flex btn-flex">
+            <button type="button" class="cursor work-button">css</button>
+            <button type="button" class="cursor work-button">html</button>
+            <button type="button" class="cursor work-button">bootstrap</button>
+            <button type="button" class="cursor work-button">Ruby</button>
+          </div>
+          <a href="#" class="cursor work-link">See Project</a>
         </div>
       </div>
       <ul class="project-flex flex">
         <li class="project-container">
-           <div class="project-text">
-             <h3 class="project-header">Professional Art Printing Data</h3>
-             <p class="project-paragraph">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a standard dummy text.
-             </p>
+          <div class="project-text">
+            <h3 class="project-header">Professional Art Printing Data</h3>
+            <p class="project-paragraph">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
             <ul class="flex project btn-flex">
-               <li class="project-button">html</li>
-               <li class="project-button">bootstrap</li>
-               <li class="project-button">Ruby</li>
+              <li class="project-button">html</li>
+              <li class="project-button">bootstrap</li>
+              <li class="project-button">Ruby</li>
             </ul>
-           </div>
-           <a href="/" class="cursor project-link">See Project</a>
+          </div>
+          <a href="/" class="cursor project-link">See Project</a>
         </li>
         <li class="project-container">
           <div class="project-text">
             <h3 class="project-header">Professional Art Printing Data</h3>
             <p class="project-paragraph">
-           A daily selection of privately personalized reads; no accounts or
-           sign-ups required. has been the industry's standard dummy text ever
-           since the 1500s, when an unknown printer took a standard dummy text.
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
             </p>
-           <ul class="flex project btn-flex">
+            <ul class="flex project btn-flex">
               <li class="project-button">html</li>
               <li class="project-button">bootstrap</li>
               <li class="project-button">Ruby</li>
-           </ul>
+            </ul>
           </div>
           <a href="/" class="cursor project-link">See Project</a>
-       </li>
-       <li class="project-container">
-        <div class="project-text">
-          <h3 class="project-header">Professional Art Printing Data</h3>
-          <p class="project-paragraph">
-         A daily selection of privately personalized reads; no accounts or
-         sign-ups required. has been the industry's standard dummy text ever
-         since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-         <ul class="flex project btn-flex">
-            <li class="project-button">html</li>
-            <li class="project-button">bootstrap</li>
-            <li class="project-button">Ruby</li>
-         </ul>
-        </div>
-        <a href="/" class="cursor project-link">See Project</a>
-       </li>
-       <li class="project-container">
-        <div class="project-text">
-          <h3 class="project-header">Professional Art Printing Data</h3>
-          <p class="project-paragraph">
-         A daily selection of privately personalized reads; no accounts or
-         sign-ups required. has been the industry's standard dummy text ever
-         since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-         <ul class="flex project btn-flex">
-            <li class="project-button">html</li>
-            <li class="project-button">bootstrap</li>
-            <li class="project-button">Ruby</li>
-         </ul>
-        </div>
-        <a href="/" class="cursor project-link">See Project</a>
-      </li>
-      <li class="project-container">
-      <div class="project-text">
-        <h3 class="project-header">Professional Art Printing Data</h3>
-        <p class="project-paragraph">
-       A daily selection of privately personalized reads; no accounts or
-       sign-ups required. has been the industry's standard dummy text ever
-       since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-       <ul class="flex project btn-flex">
-          <li class="project-button">html</li>
-          <li class="project-button">bootstrap</li>
-          <li class="project-button">Ruby</li>
-       </ul>
-      </div>
-      <a href="/" class="cursor project-link">See Project</a>
-      </li>
-      <li class="project-container">
-        <div class="project-text">
-          <h3 class="project-header">Professional Art Printing Data</h3>
-          <p class="project-paragraph">
-         A daily selection of privately personalized reads; no accounts or
-         sign-ups required. has been the industry's standard dummy text ever
-         since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-         <ul class="flex project btn-flex">
-            <li class="project-button">html</li>
-            <li class="project-button">bootstrap</li>
-            <li class="project-button">Ruby</li>
-         </ul>
-        </div>
-        <a href="/" class="cursor project-link">See Project</a>
-     </li>
+        </li>
+        <li class="project-container">
+          <div class="project-text">
+            <h3 class="project-header">Professional Art Printing Data</h3>
+            <p class="project-paragraph">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="flex project btn-flex">
+              <li class="project-button">html</li>
+              <li class="project-button">bootstrap</li>
+              <li class="project-button">Ruby</li>
+            </ul>
+          </div>
+          <a href="/" class="cursor project-link">See Project</a>
+        </li>
+        <li class="project-container">
+          <div class="project-text">
+            <h3 class="project-header">Professional Art Printing Data</h3>
+            <p class="project-paragraph">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="flex project btn-flex">
+              <li class="project-button">html</li>
+              <li class="project-button">bootstrap</li>
+              <li class="project-button">Ruby</li>
+            </ul>
+          </div>
+          <a href="/" class="cursor project-link">See Project</a>
+        </li>
+        <li class="project-container">
+          <div class="project-text">
+            <h3 class="project-header">Professional Art Printing Data</h3>
+            <p class="project-paragraph">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="flex project btn-flex">
+              <li class="project-button">html</li>
+              <li class="project-button">bootstrap</li>
+              <li class="project-button">Ruby</li>
+            </ul>
+          </div>
+          <a href="/" class="cursor project-link">See Project</a>
+        </li>
+        <li class="project-container">
+          <div class="project-text">
+            <h3 class="project-header">Professional Art Printing Data</h3>
+            <p class="project-paragraph">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <ul class="flex project btn-flex">
+              <li class="project-button">html</li>
+              <li class="project-button">bootstrap</li>
+              <li class="project-button">Ruby</li>
+            </ul>
+          </div>
+          <a href="/" class="cursor project-link">See Project</a>
+        </li>
       </ul>
     </section>
     <section id="about" class="about-section">
       <h2 class="greetings about">About me</h2>
       <div class="about-container img2">
-        <p class=" intro">
+        <p class="intro">
           Hello I'm a software developer! I can help you build a product,
           feature or website. Look through some of my work and experience! If
           you like what you see and have a project you need coded, dont hestiate
@@ -220,63 +257,92 @@
       <ul class="list-flex">
         <li class="list-flex-container">
           <ul class="list-container">
-             <li class="list first"><i class="fa fa-star icons"></i>Language</li>
-             <li class="list">Javascript</li>
-             <li class="list">Ruby</li>
-             <li class="list">Html</li>
-             <li class="list">Css</li>
+            <li class="list first"><i class="fa fa-star icons"></i>Language</li>
+            <li class="list">Javascript</li>
+            <li class="list">Ruby</li>
+            <li class="list">Html</li>
+            <li class="list">Css</li>
           </ul>
         </li>
         <li class="list-flex-container">
-            <ul class="list-container">
-               <li class="list first"><i class="fa fa-square icons"></i>Frameworks</li>
-               <li class="list">Ruby on Rails</li>
-               <li class="list">CapyBara</li>
-               <li class="list">Bootstrap</li>
-               <li class="list">RSPec</li>
-             </ul>
+          <ul class="list-container">
+            <li class="list first">
+              <i class="fa fa-square icons"></i>Frameworks
+            </li>
+            <li class="list">Ruby on Rails</li>
+            <li class="list">CapyBara</li>
+            <li class="list">Bootstrap</li>
+            <li class="list">RSPec</li>
+          </ul>
         </li>
         <li class="list-flex-container">
-            <ul class="list-container last">
-               <li class="list first"><i class="fa fa-circle icons"></i>Skills</li>
-               <li class="list">Terminal</li>
-               <li class="list">Codepen</li>
-               <li class="list">Github</li>
-               <li class="list">Gitlab</li>
-           </ul>
+          <ul class="list-container last">
+            <li class="list first"><i class="fa fa-circle icons"></i>Skills</li>
+            <li class="list">Terminal</li>
+            <li class="list">Codepen</li>
+            <li class="list">Github</li>
+            <li class="list">Gitlab</li>
+          </ul>
         </li>
       </ul>
     </section>
     <section id="contact" class="contact">
-      <h2 class="contact-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+      <h2 class="contact-header">
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
       <form class="form" action="https://formspree.io/f/mnqlvaon" method="post">
         <label for="name">
-        <input type="text" name="name" class="input" id="name" placeholder="Full name" maxlength="30" required>
+          <input
+            type="text"
+            name="name"
+            class="input"
+            id="name"
+            placeholder="Full name"
+            maxlength="30"
+            required
+          />
         </label>
         <label for="email">
-        <input type="email" name="_replyto" class="input" id="email" placeholder="Email address" required>
+          <input
+            type="email"
+            name="_replyto"
+            class="input"
+            id="email"
+            placeholder="Email address"
+            required
+          />
         </label>
-        <textarea class="textarea" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
+        <textarea
+          class="textarea"
+          name="message"
+          placeholder="Enter text here"
+          maxlength="500"
+          required
+        ></textarea>
         <button type="submit" class="contact-button">Get in touch</button>
       </form>
     </section>
     <footer class="footer">
       <ul class="flex-footer">
         <li>
-            <a href="https://github.com/bimbolabuari/"
+          <a
+            href="https://github.com/bimbolabuari/"
             target="_blank"
-            rel="noopener"><i class="fa fa-github icon footer-icon"></i>
-            </a>
+            rel="noopener"
+            ><i class="fa fa-github icon footer-icon"></i>
+          </a>
         </li>
         <li>
-            <a
+          <a
             href="https://www.linkedin.com/in/bimbolabuari/"
             target="_blank"
             rel="noopener"
-            ><i class="fa fa-linkedin icon footer-icon"></i></a>
+            ><i class="fa fa-linkedin icon footer-icon"></i
+          ></a>
         </li>
         <li>
-            <a
+          <a
             href="https://www.instagram.com/bimbolabuari/"
             target="_blank"
             rel="noopener"
@@ -284,20 +350,23 @@
           ></a>
         </li>
         <li>
-            <a
+          <a
             href="https://twitter.com/bimbolabuari/"
             target="_blank"
             rel="noopener"
             ><i class="fa fa-twitter icon footer-icon"></i
           ></a>
         </li>
-         <li>
-            <a href="mailto:abimbola.buari@gmail.com" target="_blank" rel="noopener"
+        <li>
+          <a
+            href="mailto:abimbola.buari@gmail.com"
+            target="_blank"
+            rel="noopener"
             ><i class="fa fa-envelope icon footer-icon"></i
           ></a>
-         </li>
+        </li>
       </ul>
     </footer>
     <script src="index.js"></script>
-    </body>
+  </body>
 </html>

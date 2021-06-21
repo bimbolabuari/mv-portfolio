@@ -1,19 +1,19 @@
 # PORTFOLIO-PROJECT
 
-> This project is a Microverse exercise on HTML and CSS that demonstrates the knowledge of Semantic HTML, flexbox, background properties, and mobile-first responsiveness, Responsive web design, CSS media query.
+> This project is a Microverse exercise on HTML, CSS and JS that demonstrates the knowledge of Semantic HTML, flexbox, background properties, and mobile-first responsiveness, Responsive web design, CSS media query, DOM Manipulation, Event listener, arrow function, let and const.
 
 ![screenshot](screenshot.png)
 
 ## Built With
 
 - Semantic HTML & CSS
+- JavaScript
 - Github workflow
 - Linters(Lighthouse, stylelint, Webhint)
 
-## Live Preview 
+## Live Preview
 
 [Github deploy Page](https://bimbolabuari.github.io/mv-portfolio/)
-
 
 ## Author
 
