@@ -22,20 +22,21 @@
      gtag('config', 'UA-199544730-1');
   </script>
   </head>
-  <body>
+  <body class="body">
     <header class="header header-flex">
       <nav class="nav flex">
         <a href="#" class="logo">Abimbola</a>
-        <a href="/" class="none white"><i class="fa fa-bars cursor"></i></a>
+        <a href="#" id="hamburger" class="none white"><i class="fa fa-bars cursor"></i></a>
       </nav>
       <ul class="nav-list block">
-        <li><a href="#" class="ul-list cursor">Portfolio</a></li>
-        <li><a href="#" class="ul-list cursor">About</a></li>
-        <li><a href="#" class="ul-list cursor">Contact</a></li>
-        <li><a href="#" class="ul-list cursor"><i class="fa fa-envelope white header-icon"></i></a></li>
+        <li><a><i id="close" class="fa fa-times white none"></i></a></li>
+        <li><a href="#portfolio" class="ul-list cursor">Portfolio</a></li>
+        <li><a href="#about" class="ul-list cursor">About</a></li>
+        <li><a href="#contact" class="ul-list cursor">Contact</a></li>
+        <li><a href="mailto:abimbola.buari@gmail.com" class="ul-list cursor"><i class="fa fa-envelope white header-icon"></i></a></li>
       </ul>
     </header>
-    <section class="main-section img flex">
+    <section  class="main-section img flex">
         <div class="greetings-container">
           <h1 class="greetings">Hey There.</h1>
           <h2 class="greetings">I'm Abimbola</h2>
@@ -83,7 +84,7 @@
              </li>
         </ul>
     </section>
-    <section class="work">
+    <section id="portfolio" class="work">
       <h2 class="work-header">My recent Works</h2>
       <div class="works flex">
         <div class="img-works"></div>
@@ -204,7 +205,7 @@
      </li>
       </ul>
     </section>
-    <section class="about-section">
+    <section id="about" class="about-section">
       <h2 class="greetings about">About me</h2>
       <div class="about-container img2">
         <p class=" intro">
@@ -246,7 +247,7 @@
         </li>
       </ul>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2 class="contact-header">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form class="form" action="https://formspree.io/f/mnqlvaon" method="post">
         <label for="name">
@@ -297,5 +298,6 @@
          </li>
       </ul>
     </footer>
-  </body>
+    <script src="index.js"></script>
+    </body>
 </html>
