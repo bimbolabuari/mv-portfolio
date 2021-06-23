@@ -363,18 +363,19 @@
 
 .project-container {
   background: linear-gradient(
+
       180.45deg,
       rgba(38, 38, 38, 0.9) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
     ),
     url("././images/project-setup3.jpg");
-  background-color: #ccc;
-  height: 420px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: 10px auto;
+    background-color: #ccc;
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 10px auto;
 }
 
 .project-container:hover {
@@ -679,11 +680,10 @@
   color: #172b4d;
 }
 
-.pop-up-container { 
-     display: flex;
+.pop-up-container {
+  display: flex;
   flex-direction: column;
 }
-
 
 .pop-up-image {
   width: 100%;
@@ -715,15 +715,15 @@
 
 .pop-up-button-container {
   display: flex;
-    justify-content: space-between;
-    margin: 15px auto;
+  justify-content: space-between;
+  margin: 15px auto;
 }
 
 .pop-up-button {
   padding: 12px;
   background: #ff6b00;
   width: 49%;
-  color: #FFF;
+  color: #fff;
   font-size: 17px;
   line-height: 20px;
   border: none;
@@ -777,17 +777,17 @@
     padding: 120px 80px 0;
   }
 
-  .pop-up-container { 
- flex-direction: row;
-}
+  .pop-up-container {
+    flex-direction: row;
+  }
 
-.pop-up-image {
-  width: 50%;
-}
+  .pop-up-image {
+    width: 50%;
+  }
 
-.pop-up-right {
-  padding-left: 20px;
-}
+  .pop-up-right {
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
