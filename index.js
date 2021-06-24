@@ -3,6 +3,8 @@ const navList = document.querySelector('.nav-list');
 const projectSection = document.querySelector('.project-flex');
 const navLinks = document.querySelectorAll('.nav-list a');
 const projectPopup = document.querySelector('#project-popup');
+const email = document.querySelector('#email');
+const submitButton = document.querySelector('.contact-button');
 
 const toggleNavMenu = () => {
   navList.classList.toggle('nav-active');
@@ -132,5 +134,16 @@ document.addEventListener('click', (event) => {
 
   if (event.target.dataset.action === 'closePopup') {
     projectPopup.style.display = 'none';
+  }
+});
+
+const regex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*(\+[a-z0-9-]+)?@[a-z0-9-]+(\.[a-z0-9-]+)*$/;
+
+submitButton.addEventListener('click', () => {
+  const validatedMail = email.value;
+  if (!regex.test(validatedMail)) {
+    submitButton.setCustomValidity('Email should be in lowercase. Please try again!');
+  } else {
+    submitButton.setCustomValidity('');
   }
 });
