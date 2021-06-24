@@ -640,6 +640,102 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.pop-up-section {
+  position: relative;
+}
+
+.display-none {
+  display: none;
+}
+
+.pop-up-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 44px;
+  color: #172b4d;
+  padding-bottom: 5px;
+}
+
+.pop-up-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  max-width: 265px;
+}
+
+.pop-up-icon {
+  font-size: 22px;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  color: #172b4d;
+}
+
+.pop-up-container {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+}
+
+.pop-up-list {
+  border: 1px solid #dfe1e6;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+}
+
+.pop-up-anchor {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.pop-up-paragraph {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.pop-up-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+
+.pop-up-button {
+  padding: 10px;
+  background: #ff6b00;
+  width: 47%;
+  color: #fff;
+  font-size: 15px;
+  line-height: 13px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pop-up-image {
+  height: 38%;
+}
+
+.display-project {
+  position: fixed;
+  z-index: 2;
+  padding: 10px;
+  top: 15%;
+  left: 11%;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 8px rgb(45, 45, 45);
+}
+
 @media only screen and (min-width: 600px) {
   .greetings {
     font-size: 56px;
@@ -677,18 +773,36 @@
   }
 
   .project-flex {
+    position: relative;
+    background-color: #fff;
     width: 80%;
-    margin: 0 auto;
+  }
+
+  .pop-up-image {
+    height: 45%;
+  }
+
+  .pop-up-paragraph {
+    font-size: 17px;
+    line-height: 31px;
   }
 
   .contact {
     padding: 120px 80px 0;
+  }
+
+  .pop-up-right {
+    padding-left: 20px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .d-none {
     display: block;
+  }
+
+  .pop-up-container {
+    flex-direction: row;
   }
 
   .block {
@@ -842,6 +956,19 @@
     align-self: start;
     font-size: 18px;
   }
+
+  .pop-up-image {
+    height: 50%;
+  }
+
+  .display-project {
+    height: 65%;
+  }
+
+  .pop-up-paragraph {
+    font-size: 14px;
+    line-height: 28px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -916,5 +1043,13 @@
 
   .list-flex-container {
     width: auto;
+  }
+
+  .pop-up-paragraph {
+    font-size: 21px;
+  }
+
+  .display-project {
+    width: 70%;
   }
 }
