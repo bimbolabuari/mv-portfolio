@@ -1,6 +1,6 @@
 # PORTFOLIO-PROJECT
 
-> This project is a Microverse exercise on HTML, CSS and JS that demonstrates the knowledge of Semantic HTML, flexbox, background properties, and mobile-first responsiveness, Responsive web design, CSS media query, DOM Manipulation, Event listener, arrow function, let and const, Arrays, Object, String interpolation, Array method.
+> This project is a Microverse exercise on HTML, CSS and JS that demonstrates the knowledge of Semantic HTML, flexbox, background properties, and mobile-first responsiveness, Responsive web design, CSS media query, DOM Manipulation, Event listener, arrow function, let and const, Arrays, Object, String interpolation, Array method, JavaScript form validation.
 
 ![screenshot](screenshot.png)
 
