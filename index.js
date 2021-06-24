@@ -31,7 +31,19 @@ const projectArrays = [
     name: 'Mobile post stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
-    id: '001',
+    id: '002',
+  },
+  {
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '003',
+  },
+  {
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '004',
   },
   {
     name: 'Mobile post stories',
@@ -43,29 +55,17 @@ const projectArrays = [
     name: 'Mobile post stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
-    id: '001',
+    id: '005',
   },
   {
     name: 'Mobile post stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technologies: ['html', 'Bootstrap', 'Ruby'],
-    id: '001',
-  },
-  {
-    name: 'Mobile post stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
-    id: '001',
-  },
-  {
-    name: 'Mobile post stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    technologies: ['html', 'Bootstrap', 'Ruby'],
-    id: '001',
+    id: '006',
   },
 ];
 
-function createProjectElement(project) {
+const createProjectElement = (project) => {
   const projectcontainer = document.createElement('li');
   projectcontainer.classList.add('project-container');
   projectcontainer.innerHTML = `
@@ -79,18 +79,18 @@ function createProjectElement(project) {
   <button data-action="showPopup" data-project-id="${project.id}" class="cursor project-link">See Project</button>
   `;
   return projectcontainer;
-}
+};
 
-function displayProject(project, projectSection) {
+const displayProject = (project, projectSection) => {
   const newProjectElement = createProjectElement(project);
   projectSection.appendChild(newProjectElement);
-}
+};
 
 projectArrays.forEach((project) => {
   displayProject(project, projectSection);
 });
 
-function createPopupElement(project) {
+const createPopupElement = (project) => {
   const popupSection = document.createElement('div');
   popupSection.classList.add('pop-up-section');
   popupSection.innerHTML = `
@@ -111,16 +111,16 @@ function createPopupElement(project) {
 </div>
   `;
   return popupSection;
-}
+};
 
-function displayPopup(event) {
+const displayPopup = (event) => {
   const { projectId } = event.target.dataset;
   const currentObject = projectArrays.find((project) => projectId === project.id);
   const showPopup = createPopupElement(currentObject);
   projectPopup.style.display = 'block';
   projectPopup.appendChild(showPopup);
   projectPopup.classList.add('display-project');
-}
+};
 
 document.addEventListener('click', (event) => {
   if (!event.target.dataset.action) {
