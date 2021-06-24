@@ -1,8 +1,8 @@
 const hamburger = document.querySelector('.hamburger');
 const navList = document.querySelector('.nav-list');
-const projectSection = document.querySelector('#project-popup');
+const projectSection = document.querySelector('.project-flex');
 const navLinks = document.querySelectorAll('.nav-list a');
-const projectLinks = document.querySelectorAll('.project-link');
+const projectPopup = document.querySelector('#project-popup');
 
 const toggleNavMenu = () => {
   navList.classList.toggle('nav-active');
@@ -10,7 +10,9 @@ const toggleNavMenu = () => {
     if (link.style.animation) {
       link.style.animation = '';
     } else {
-      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 2 + 0.4}s`;
+      link.style.animation = `navLinkFade 0.5s ease forwards ${
+        index / 2 + 0.4
+      }s`;
     }
   });
   hamburger.classList.toggle('toggle');
@@ -26,97 +28,84 @@ navLinks.forEach((link) => {
 
 const projectArrays = [
   {
-    name: 'Multi Post Stories',
-    technologies: [
-      'html',
-      'Bootstrap',
-      'Ruby on rails',
-    ],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/details-mobile.png',
-    linkLive: 'https://github.com/bimbolabuari/',
-    linkSource: 'https://github.com/bimbolabuari/'
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '001',
   },
   {
-    name: 'Multi Post Stories',
-    technologies: [
-      'html',
-      'Bootstrap',
-      'Ruby on rails',
-    ],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/details-mobile.png',
-    linkLive: 'https://github.com/bimbolabuari/',
-    linkSource: 'https://github.com/bimbolabuari/',
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '001',
   },
   {
-    name: 'Multi Post Stories',
-    technologies: [
-      'html',
-      'Bootstrap',
-      'Ruby on rails',
-    ],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/details-mobile.png',
-    linkLive: 'https://github.com/bimbolabuari/',
-    linkSource: 'https://github.com/bimbolabuari/',
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '001',
   },
   {
-    name: 'Multi Post Stories',
-    technologies: [
-      'html',
-      'Bootstrap',
-      'Ruby on rails',
-    ],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/details-mobile.png',
-    linkLive: 'https://github.com/bimbolabuari/',
-    linkSource: 'https://github.com/bimbolabuari/',
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '001',
   },
   {
-    name: 'Multi Post Stories',
-    technologies: [
-      'html',
-      'Bootstrap',
-      'Ruby on rails',
-    ],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/details-mobile.png',
-    linkLive: 'https://github.com/bimbolabuari/',
-    linkSource: 'https://github.com/bimbolabuari/',
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '001',
   },
   {
-    name: 'Multi Post Stories',
-    technologies: [
-      'html',
-      'Bootstrap',
-      'Ruby on rails',
-    ],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: './images/details-mobile.png',
-    linkLive: 'https://github.com/bimbolabuari/',
-    linkSource: 'https://github.com/bimbolabuari/',
+    name: 'Mobile post stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry"s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['html', 'Bootstrap', 'Ruby'],
+    id: '001',
   },
 ];
 
+function createProjectElement(project) {
+  const projectcontainer = document.createElement('li');
+  projectcontainer.classList.add('project-container');
+  projectcontainer.innerHTML = `
+  <div class="project-text">
+    <h3 class="project-header">${project.name}</h3>
+    <p class="project-paragraph">${project.description}</p>
+    <ul class="flex project btn-flex">
+   ${project.technologies.map((tech) => `<li class="project-button">${tech}</li>`).join('')}
+    </ul>
+  </div>
+  <button data-action="showPopup" data-project-id="${project.id}" class="cursor project-link">See Project</button>
+  `;
+  return projectcontainer;
+}
+
+function displayProject(project, projectSection) {
+  const newProjectElement = createProjectElement(project);
+  projectSection.appendChild(newProjectElement);
+}
+
+projectArrays.forEach((project) => {
+  displayProject(project, projectSection);
+});
+
 function createPopupElement(project) {
   const popupSection = document.createElement('div');
-
+  popupSection.classList.add('pop-up-section');
   popupSection.innerHTML = `
   <h2 class="pop-up-title">${project.name}</h2>
-  <i class="fa fa-times-circle pop-up-icon"></i>
+  <i class="fa fa-times-circle pop-up-icon" data-action="closePopup"></i>
   <ul class="pop-up-flex">
-    <li class="pop-up-list"><a class="pop-up-anchor">${project.technologies}</a></li>
-    <li class="pop-up-list"><a class="pop-up-anchor">${project.technologies}</a></li>
-    <li class="pop-up-list"><a class="pop-up-anchor">${project.technologies}</a></li>
+   ${project.technologies.map((tech) => `<li class="pop-up-list pop-up-anchor">${tech}</li>`).join('')}
   </ul>
 <div class="pop-up-container">
-<img class="pop-up-image" src="./images/details-mobile.png" ${project.image} alt="project-images">
+<img src="./images/details-mobile.png" class="pop-up-image" alt="Project image">
 <div class="pop-up-right">
 <p class="pop-up-paragraph">${project.description}</p>
 <div class="pop-up-button-container">
-<button type="submit"class="pop-up-button">${project.linkLive}<i class="fa fa-arrow-circle-down"></i></button>
-<button type="submit" class="pop-up-button">${project.linkSource}<i class="fa fa-github"></i></button>
+<a href="#" class="pop-up-button">Livelink<i class="fa fa-arrow-circle-down"></i></a>
+<a href="#" class="pop-up-button">Sourcelink<i class="fa fa-github"></i></a>
 </div>
 </div>
 </div>
@@ -124,18 +113,24 @@ function createPopupElement(project) {
   return popupSection;
 }
 
-function popupProject(project, projectSection) {
-  const newPopupElement = createPopupElement(project);
-  projectSection.appendChild(newPopupElement);
-  projectSection.classList.remove('none');
+function displayPopup(event) {
+  const { projectId } = event.target.dataset;
+  const currentObject = projectArrays.find((project) => projectId === project.id);
+  const showPopup = createPopupElement(currentObject);
+  projectPopup.style.display = 'block';
+  projectPopup.appendChild(showPopup);
+  projectPopup.classList.add('display-project');
 }
 
-// console.log(projectLinks, projectArrays)
+document.addEventListener('click', (event) => {
+  if (!event.target.dataset.action) {
+    return;
+  }
+  if (event.target.dataset.action === 'showPopup') {
+    displayPopup(event);
+  }
 
-projectLinks.forEach((project) => {
-  project.addEventListener('click', () => {
-    projectArrays.forEach((project) => {
-      popupProject(project, projectSection);
-    });
-  });
+  if (event.target.dataset.action === 'closePopup') {
+    projectPopup.style.display = 'none';
+  }
 });
