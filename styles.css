@@ -251,12 +251,12 @@
 }
 
 .img-works {
-  background-image: url(./images/main-project-setup.jpg);
+  background-image: url(./images/Screenshot6.png);
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 30px solid #aaa;
+  border: 15px solid #aaa;
   border-radius: 3px;
   height: 350px;
 }
@@ -362,7 +362,7 @@
 }
 
 .project-container {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0.9) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("././images/project-setup3.jpg");
+  background: linear-gradient(180.45deg, rgba(53, 52, 52, 0.9) 97.25%, rgba(165, 162, 162, 0.9) 99.94%), url("././images/project-setup3.jpg");
   background-color: #ccc;
   height: 420px;
   background-position: center;
